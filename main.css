@@ -147,7 +147,21 @@ header {
     transition: all 0.2s linear;
 }
 
+.fa-sharp{
+    font-size: 25px;
+}
 
+
+.dropdown-menu{
+    align-self: flex-start;
+    display: flex;
+    justify-content: space-between;
+}
+.hamburger{
+    background-color: transparent;
+    border: none;
+    display:none
+}
 
 
 /* Banner */
@@ -357,16 +371,12 @@ header {
 
 
     header {
-        flex-direction: column;
-        align-items: center;
         border-bottom: 1px solid rgba(244, 214, 58, 0.59);
-        padding-bottom: 20px;
+        padding: 60px 50px 20px;
     }
 
     .navbar {
-        flex-direction: column;
-        align-items: center;
-        margin-top: 30px;
+        gap: 20px;
     }
 
     .nav-item {
@@ -507,9 +517,11 @@ header {
         align-items: center;
         margin-top: 40px;
     }
+   
 }
 
 @media screen and (min-width: 670px) {
+
     .banner {
         padding: 120px 20px 0 40px;
     }
@@ -585,5 +597,25 @@ header {
   /* Download section */
     .download-section {
         flex-direction: row;
+    }
+}
+
+
+
+@media screen and (max-width: 670px) {
+    header{
+        flex-direction: column;
+        align-items: center;
+    }
+    .navbar{
+        flex-direction: column;
+        align-items: center;
+        margin-top:30px
+    }
+    .dropdown-menu{
+        width: 100%;
+    }
+    .hamburger{
+        display:block;
     }
 }
