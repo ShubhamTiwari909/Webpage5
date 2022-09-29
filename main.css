@@ -150,7 +150,6 @@ header {
 /* Banner */
 .banner {
     display: flex;
-    justify-content: space-between;
     padding: 180px 0 0 100px;
     justify-content: space-between;
     background-image: linear-gradient(108deg, #fceb6f 17%, #fede60 77%);
@@ -190,6 +189,7 @@ header {
 
 .banner-image {
     object-fit: fill;
+    flex-grow:1/2;
 }
 
 /* how-it-works */
@@ -292,8 +292,8 @@ header {
 }
 
 .join-btn {
-    height: 70px;
-    padding: 0 40px 0 41px;
+    display: inline-block;
+    padding: 20px 40px 20px 41px;
     background-image: linear-gradient(103deg, #fceb6f 15%, #fede60 78%);
     border: none;
     font-weight: bolder;
@@ -348,13 +348,12 @@ header {
         font-size: 16px;
     }
 
-    .nav-link {
-        width: 200px;
-    }
 
     header {
         flex-direction: column;
         align-items: center;
+        border-bottom: 1px solid rgba(244, 214, 58, 0.59);
+        padding-bottom: 20px;
     }
 
     .navbar {
@@ -492,7 +491,7 @@ header {
     .join-btn {
         align-self: center;
         height: 40px;
-        padding: 0 20px 0 21px;
+        padding: 10px 20px 0 21px;
     }
 
   /* Footer */
@@ -551,8 +550,7 @@ header {
     }
 
     .join-btn {
-        height: 50px;
-        padding: 0 25px 0 31px;
+        padding: 10px 25px 0 31px;
         background-image: linear-gradient(103deg, #fceb6f 15%, #fede60 78%);
     }
 
@@ -568,9 +566,6 @@ header {
         font-size: 18px;
     }
 
-    .nav-link {
-        width: 200px;
-    }
 
   /* Banner */
     .banner-image,
