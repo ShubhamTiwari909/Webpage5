@@ -147,6 +147,9 @@ header {
     transition: all 0.2s linear;
 }
 
+
+
+
 /* Banner */
 .banner {
     display: flex;
@@ -341,8 +344,12 @@ header {
     }
 }
 
+
+
+
+
 /* MEDIA QUERIES*/
-@media screen and (min-width: 300px) and (max-width: 1000px) {
+@media screen and (max-width: 1000px) {
   /* common styling media queries */
     .text-lg {
         font-size: 16px;
@@ -502,7 +509,7 @@ header {
     }
 }
 
-@media screen and (min-width: 670px) and (max-width: 1000px) {
+@media screen and (min-width: 670px) {
     .banner {
         padding: 120px 20px 0 40px;
     }
@@ -560,7 +567,7 @@ header {
     }
 }
 
-@media screen and (min-width: 801px) and (max-width: 1000px) {
+@media screen and (min-width: 801px) {
   /* header media queries */
     .text-lg {
         font-size: 18px;
