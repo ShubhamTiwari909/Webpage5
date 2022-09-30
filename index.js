@@ -1,3 +1,4 @@
+const navigation = document.getElementById("navbar");
 const elements = document.getElementsByClassName('nav-link');
 
 const handleMouseIn = value => {
@@ -11,3 +12,19 @@ const handleMouseOut = () => {
         elements[i].style.color = "#333";
     }
 }
+
+const dropdownNavigation = () => {
+    navigation.style.display === "none" ? navigation.style.display = "flex" : navigation.style.display = "none";
+}
+
+
+function changingMediaQuery() {
+    if (window.innerWidth >= 670) {
+        navigation.style.display = "flex"
+    }
+    else{
+        navigation.style.display = "none"
+    }
+}
+
+window.addEventListener('resize', changingMediaQuery);

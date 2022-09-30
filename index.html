@@ -19,16 +19,17 @@
             src="https://dl.dropboxusercontent.com/s/v91kjadxafdl2bv/logo.png?dl=0"
           />
         </a>
-        <button class="hamburger"><i class="fa-sharp fa-solid fa-bars"></i></button>
+        <button class="hamburger" onclick="dropdownNavigation();"><i class="fa-sharp fa-solid fa-bars"></i></button>
       </div>
       <nav>
-        <ul class="navbar">
+        <ul class="navbar" id="navbar">
           <li class="nav-item">
             <a
               href="javascript:void(0)"
               class="nav-link text-lg text-charcoal"
               onmouseover="handleMouseIn(0)"
               onmouseout="handleMouseOut()"
+              onclick="dropdownNavigation();"
               >Create an account</a
             >
           </li>
@@ -38,6 +39,7 @@
               class="nav-link text-lg text-charcoal"
               onmouseover="handleMouseIn(1)"
               onmouseout="handleMouseOut()"
+              onclick="dropdownNavigation();"
               >How it works</a
             >
           </li>
@@ -47,6 +49,7 @@
               class="nav-link text-lg text-charcoal"
               onmouseover="handleMouseIn(2)"
               onmouseout="handleMouseOut()"
+              onclick="dropdownNavigation();"
               >Support</a
             >
           </li>
@@ -56,6 +59,7 @@
               class="nav-link text-lg text-charcoal"
               onmouseover="handleMouseIn(3)"
               onmouseout="handleMouseOut()"
+              onclick="dropdownNavigation();"
               >FAQ</a
             >
           </li>
