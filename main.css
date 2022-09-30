@@ -18,7 +18,7 @@ a {
 
 /* COMMON STYLING STARTS HERE */
 
-.container-lg{
+.container-lg {
     padding-right: 100px;
     padding-left: 100px;
 }
@@ -139,7 +139,7 @@ header {
 .navbar {
     display: flex;
     justify-content: space-between;
-    gap:30px;
+    gap: 30px;
 }
 
 
@@ -147,20 +147,21 @@ header {
     transition: all 0.2s linear;
 }
 
-.fa-sharp{
+.fa-sharp {
     font-size: 25px;
 }
 
 
-.dropdown-menu{
+.dropdown-menu {
     align-self: flex-start;
     display: flex;
     justify-content: space-between;
 }
-.hamburger{
+
+.hamburger {
     background-color: transparent;
     border: none;
-    display:none
+    display: none
 }
 
 
@@ -362,7 +363,8 @@ header {
 
 /* MEDIA QUERIES*/
 @media screen and (max-width: 1000px) {
-  /* common styling media queries */
+
+    /* common styling media queries */
     .text-lg {
         font-size: 16px;
     }
@@ -385,7 +387,7 @@ header {
         font-size: 25px;
     }
 
-  /* banner */
+    /* banner */
     .banner {
         flex-wrap: wrap;
         justify-content: center;
@@ -402,7 +404,7 @@ header {
     }
 
     .banner-image,
-  .download-image {
+    .download-image {
         width: 70%;
         margin-top: 80px;
     }
@@ -414,7 +416,7 @@ header {
     }
 
     .fa-apple,
-  .fa-google-play {
+    .fa-google-play {
         margin-right: 7px;
         font-size: 20px;
     }
@@ -443,7 +445,7 @@ header {
         font-size: 11px;
     }
 
-  /* How it works */
+    /* How it works */
     .steps {
         flex-direction: column;
         align-items: center;
@@ -459,7 +461,7 @@ header {
         margin-right: 60px;
     }
 
-  /* Download section */
+    /* Download section */
     .download-section {
         flex-direction: column;
         justify-content: center;
@@ -478,7 +480,7 @@ header {
         display: none;
     }
 
-  /* Join us sections */
+    /* Join us sections */
     .join-section {
         margin: 58px 20px 0;
     }
@@ -508,13 +510,13 @@ header {
         padding: 10px 20px 0 21px;
     }
 
-  /* Footer */
+    /* Footer */
     .footer-links {
         flex-direction: column;
         align-items: center;
         margin-top: 40px;
     }
-   
+
 }
 
 @media screen and (min-width: 670px) {
@@ -524,14 +526,14 @@ header {
     }
 
     .banner-image,
-  .download-image {
+    .download-image {
         width: 40%;
         margin-top: 100px;
         margin-left: 50px;
     }
 
     .fa-apple,
-  .fa-google-play {
+    .fa-google-play {
         margin-right: 7px;
         font-size: 20px;
     }
@@ -540,17 +542,17 @@ header {
         padding: 10px 20px 12px 20px;
     }
 
-  /* How it works */
+    /* How it works */
     .steps {
         flex-direction: row;
     }
 
-  /* Download section */
+    /* Download section */
     .download-section {
         flex-direction: row;
     }
 
-  /* Join us section */
+    /* Join us section */
     .join-form {
         flex-direction: row;
     }
@@ -570,28 +572,29 @@ header {
         background-image: linear-gradient(103deg, #fceb6f 15%, #fede60 78%);
     }
 
-  /* Footer */
+    /* Footer */
     .footer-links {
         flex-direction: row;
     }
 }
 
 @media screen and (min-width: 801px) {
-  /* header media queries */
+
+    /* header media queries */
     .text-lg {
         font-size: 18px;
     }
 
 
-  /* Banner */
+    /* Banner */
     .banner-image,
-  .download-image {
+    .download-image {
         width: 40%;
         margin-top: 0;
         margin-left: 50px;
     }
 
-  /* Download section */
+    /* Download section */
     .download-section {
         flex-direction: row;
     }
@@ -599,39 +602,45 @@ header {
 
 
 @media screen and (min-width: 1400px) {
-    .banner-image,.download-image{
-        width:30%;
+
+    .banner-image,
+    .download-image {
+        width: 30%;
         object-fit: contain;
     }
 }
 
 @media screen and (min-width: 1700px) {
-    .banner-image,.download-image{
-        width:20%;
+    .download-image {
+        width: 20%;
         object-fit: contain;
     }
 }
 
 
 @media screen and (max-width: 670px) {
-    header{
+    header {
         flex-direction: column;
         align-items: center;
     }
-    .navbar{
+
+    .navbar {
         display: none;
         flex-direction: column;
         align-items: center;
-        margin-top:30px
+        margin-top: 30px
     }
-    .dropdown-menu{
+
+    .dropdown-menu {
         width: 100%;
     }
-    .hamburger{
-        display:block;
+
+    .hamburger {
+        display: block;
     }
-    .container-lg{
-        padding-right:50px;
+
+    .container-lg {
+        padding-right: 50px;
         padding-left: 50px;
     }
 }
