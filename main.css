@@ -254,7 +254,7 @@ header {
 
 .yellow-box {
     position: absolute;
-    left: 180px;
+    left: 13%;
     width: 180px;
     height: 700px;
     background-color: #ffcc0060;
@@ -598,24 +598,12 @@ header {
     .download-section {
         flex-direction: row;
     }
-}
-
-
-@media screen and (min-width: 1400px) {
-
-    .banner-image,
-    .download-image {
-        width: 30%;
-        object-fit: contain;
+    .yellow-box{
+        left: 13%;
     }
 }
 
-@media screen and (min-width: 1700px) {
-    .download-image {
-        width: 20%;
-        object-fit: contain;
-    }
-}
+
 
 
 @media screen and (max-width: 670px) {
@@ -642,5 +630,48 @@ header {
     .container-lg {
         padding-right: 50px;
         padding-left: 50px;
+    }
+
+}
+
+
+@media screen and (min-width: 1400px) {
+
+    header {
+        justify-content: space-around;
+    }
+
+    .banner {
+        justify-content: center;
+
+    }
+
+    .banner-image,
+    .download-image {
+        width: 30%;
+        object-fit: contain;
+    }
+
+    .steps {
+        justify-content: center;
+        gap: 150px;
+    }
+
+    .download-section {
+        justify-content: center;
+        gap: 150px;
+    }
+    .yellow-box{
+        left: 30%;
+    }
+}
+
+@media screen and (min-width: 1700px) {
+    .download-image {
+        width: 15%;
+        object-fit: contain;
+    }
+    .yellow-box{
+        left: 35%;
     }
 }
