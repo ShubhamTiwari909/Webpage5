@@ -18,6 +18,11 @@ a {
 
 /* COMMON STYLING STARTS HERE */
 
+.container-lg{
+    padding-right: 100px;
+    padding-left: 100px;
+}
+
 /* fonts */
 .font-w-300 {
     font-weight: 300;
@@ -121,7 +126,8 @@ header {
     position: relative;
     display: flex;
     justify-content: space-between;
-    padding: 60px 100px 0;
+    padding-top: 60px;
+    padding-bottom: 60px;
     background-image: linear-gradient(108deg, #fceb6f 17%, #fede60 77%);
 }
 
@@ -133,15 +139,9 @@ header {
 .navbar {
     display: flex;
     justify-content: space-between;
+    gap:30px;
 }
 
-.nav-item {
-    margin-right: 30px;
-}
-
-.nav-item:last-child {
-    margin-right: 0;
-}
 
 .nav-link {
     transition: all 0.2s linear;
@@ -167,7 +167,6 @@ header {
 /* Banner */
 .banner {
     display: flex;
-    padding: 180px 0 0 100px;
     justify-content: space-between;
     background-image: linear-gradient(108deg, #fceb6f 17%, #fede60 77%);
 }
@@ -183,13 +182,13 @@ header {
 
 .banner-buttons {
     display: flex;
-    justify-content: space-between;
     margin-top: 70px;
+    margin-bottom: 100px;
+    gap: 60px;
 }
 
 .btn-apple {
     border-radius: 100px;
-    margin-right: 60px;
     animation: backgroundChanger 2s 2s linear 1 forwards;
 }
 
@@ -206,7 +205,6 @@ header {
 
 .banner-image {
     object-fit: fill;
-    flex-grow:1/2;
 }
 
 /* how-it-works */
@@ -239,6 +237,7 @@ header {
     display: flex;
     justify-content: center;
     margin-top: 96px;
+    gap: 60px;
 }
 
 /* Download section */
@@ -248,7 +247,6 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 80px;
     position: relative;
     z-index: 1;
 }
@@ -380,7 +378,6 @@ header {
     }
 
     .nav-item {
-        margin-right: 0;
         margin-top: 10px;
     }
 
@@ -392,7 +389,7 @@ header {
     .banner {
         flex-wrap: wrap;
         justify-content: center;
-        padding: 120px 20px 0 40px;
+        padding-top: 120px;
     }
 
     .banner-heading {
@@ -407,7 +404,7 @@ header {
     .banner-image,
   .download-image {
         width: 70%;
-        margin-top: 100px;
+        margin-top: 80px;
     }
 
     .banner-buttons {
@@ -523,7 +520,7 @@ header {
 @media screen and (min-width: 670px) {
 
     .banner {
-        padding: 120px 20px 0 40px;
+        padding-top: 120px;
     }
 
     .banner-image,
@@ -601,6 +598,20 @@ header {
 }
 
 
+@media screen and (min-width: 1400px) {
+    .banner-image,.download-image{
+        width:30%;
+        object-fit: contain;
+    }
+}
+
+@media screen and (min-width: 1700px) {
+    .banner-image,.download-image{
+        width:20%;
+        object-fit: contain;
+    }
+}
+
 
 @media screen and (max-width: 670px) {
     header{
@@ -618,5 +629,9 @@ header {
     }
     .hamburger{
         display:block;
+    }
+    .container-lg{
+        padding-right:50px;
+        padding-left: 50px;
     }
 }
