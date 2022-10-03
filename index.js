@@ -38,6 +38,7 @@ function changingMediaQuery() {
         header.style.padding = "0";
         header.style.top = "0";
         header.style.padding = "15px";
+        header.style.width = "100%";
     }
 }
 
