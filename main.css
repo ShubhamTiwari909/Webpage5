@@ -125,7 +125,8 @@ a {
 header {
     position: absolute;
     top: 60px;
-    width: 100%;
+    width: 90%;
+    margin: 0 auto;
     padding:0 100px;
     box-sizing: border-box;
   
@@ -211,6 +212,7 @@ header {
 
 .banner-image {
     object-fit: fill;
+    width:500px;
 }
 
 /* how-it-works */
@@ -412,9 +414,7 @@ header {
         width: 70%;
         margin-top: 80px;
     }
-    .banner-image{
-        width: 70%;
-    }
+    
 
     .banner-buttons {
         margin-top: 40px;
@@ -530,15 +530,11 @@ header {
 
     
 
-    .banner-image,
     .download-image {
         width: 40%;
         margin-top: 100px;
-        margin-left: 50px;
     }
-    .banner-image{
-        width: 70%;
-    }
+    
 
     .fa-apple,
     .fa-google-play {
@@ -597,11 +593,11 @@ header {
     /* Banner */
     .banner-image,
     .download-image {
-        width: 40%;
         margin-top: 0;
         margin-left: 50px;
     }
 
+    
     /* Download section */
     .download-section {
         flex-direction: row;
@@ -659,10 +655,11 @@ header {
 
     .banner {
         justify-content: center;
-
+    }
+    .navigation{
+        justify-content: space-around;
     }
 
-    .banner-image,
     .download-image {
         width: 30%;
         object-fit: contain;
@@ -675,7 +672,6 @@ header {
 
     .download-section {
         justify-content: center;
-        gap: 150px;
     }
     .yellow-box{
         left: 30%;
