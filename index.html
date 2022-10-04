@@ -11,9 +11,9 @@
       crossorigin="anonymous"
     ></script>
   </head>
-  <body>
+  <body id="body">
     <header id="header">
-      <div class="navigation">
+      <div class="container navigation">
         <div class="dropdown-menu">
           <a href="javascript:void(0)" class="logo">
             <img
@@ -29,7 +29,7 @@
             <li class="nav-item">
               <a
                 href="javascript:void(0)"
-                class="nav-link text-lg text-charcoal"
+                class="nav-link text-charcoal responsive-nav-text"
                 onmouseover="handleMouseIn(0)"
                 onmouseout="handleMouseOut()"
                 onclick="dropdownNavigation();"
@@ -39,7 +39,7 @@
             <li class="nav-item">
               <a
                 href="javascript:void(0)"
-                class="nav-link text-lg text-charcoal"
+                class="nav-link text-charcoal responsive-nav-text"
                 onmouseover="handleMouseIn(1)"
                 onmouseout="handleMouseOut()"
                 onclick="dropdownNavigation();"
@@ -49,7 +49,7 @@
             <li class="nav-item">
               <a
                 href="javascript:void(0)"
-                class="nav-link text-lg text-charcoal"
+                class="nav-link text-charcoal responsive-nav-text"
                 onmouseover="handleMouseIn(2)"
                 onmouseout="handleMouseOut()"
                 onclick="dropdownNavigation();"
@@ -59,7 +59,7 @@
             <li class="nav-item">
               <a
                 href="javascript:void(0)"
-                class="nav-link text-lg text-charcoal"
+                class="nav-link text-charcoal responsive-nav-text"
                 onmouseover="handleMouseIn(3)"
                 onmouseout="handleMouseOut()"
                 onclick="dropdownNavigation();"
@@ -70,42 +70,44 @@
         </nav>
       </div>
     </header>
-
     <main>
       <!-- Banner Section -->
-      <section class="container-lg banner">
-        <div class="banner-text">
-          <h2 class="heading-2 text-charcoal banner-heading">
-            <span class="font-w-300">MeshApp -</span><br />Play Songs Like Never
-            Before.
-          </h2>
-          <p class="text-charcoal text-lg font-w-300 banner-paragraph">
-            Don’t leave your shopping to the last minute. The more time you have
-            to shop around, the more you can negotiate.
-          </p>
-          <div class="banner-buttons">
-            <a
-              href="javascript:void(0)"
-              class="btn-lg btn-apple text-charcoal text-lg"
-            >
-              <i class="fa-brands fa-apple"></i> App Store
-            </a>
-            <a
-              href="javascript:void(0)"
-              class="btn-lg btn-googleplay text-charcoal text-lg"
-            >
-              <i class="fa-brands fa-google-play"></i> Google Play
-            </a>
+      <section class="banner-section">
+        <div class="banner container">
+          <div class="banner-text">
+            <h2 class="heading-2 text-charcoal banner-heading">
+              <span class="font-w-300">MeshApp -</span><br />Play Songs Like
+              Never Before.
+            </h2>
+            <p class="text-charcoal text-lg font-w-300 banner-paragraph">
+              Don’t leave your shopping to the last minute.<br />
+              The more time you have to shop around, the<br />
+              more you can negotiate.
+            </p>
+            <div class="banner-buttons">
+              <a
+                href="javascript:void(0)"
+                class="btn-lg btn-apple text-charcoal text-lg"
+              >
+                <i class="fa-brands fa-apple"></i> App Store
+              </a>
+              <a
+                href="javascript:void(0)"
+                class="btn-lg btn-googleplay text-charcoal text-lg"
+              >
+                <i class="fa-brands fa-google-play"></i> Google Play
+              </a>
+            </div>
           </div>
+          <img
+            src="https://dl.dropboxusercontent.com/s/kj5wezl3sdifg4t/iphone.png?dl=0"
+            class="banner-image"
+          />
         </div>
-        <img
-          src="https://dl.dropboxusercontent.com/s/kj5wezl3sdifg4t/iphone.png?dl=0"
-          class="banner-image"
-        />
       </section>
 
       <!-- How it works -->
-      <section class="container-lg how-it-works">
+      <section class="container how-it-works">
         <h1 class="heading-1 text-darkgrey-1 text-center">How it works</h1>
         <div class="steps">
           <div class="step">
@@ -157,86 +159,91 @@
       </section>
 
       <!-- Download Section -->
-      <section class="container-lg download-section bg-light-grey">
-        <span class="yellow-box"></span>
-        <div class="download-text">
-          <h2 class="heading-2 text-darkgrey-1">Download, Play, Enjoy.</h2>
-          <h3 class="title-1 text-darkgrey-2">Better than Spotify.</h3>
-          <p class="text-md text-darkgrey-1 download-paragraph">
-            White Gold began gaining popularity in the early 1900’s as an
-            alternative to platinum. Platinum was steadily becoming more
-            fashionable, but because of its rarity many could not afford it.
-            Then, during World War II the government put a ban on the use of
-            Platinum for any non-military functions and the demand for White
-            Gold skyrocketed.
-          </p>
-        </div>
-        <img
-          class="download-image"
-          src="https://dl.dropboxusercontent.com/s/guldbe07r269hnr/iphones.png?dl=0"
-        />
-      </section>
-
-      <!-- Join us Now section -->
-      <section class="join-section">
-        <h2 class="heading-1 text-darkgrey-1">Join us now</h2>
-        <p class="text-lg text-darkgrey-1 join-paragraph">
-          Join us along the way of becoming great! We will send you emails
-          containing information of how you can help us. We don’t spam.
-        </p>
-        <form class="join-form">
-          <input
-            type="email"
-            class="join-input"
-            placeholder="Your email address"
+      <section class="bg-light-grey">
+        <div class="container download-section">
+          <span class="yellow-box"></span>
+          <div class="download-text">
+            <h2 class="heading-2 text-darkgrey-1">Download, Play, Enjoy.</h2>
+            <h3 class="title-1 text-darkgrey-2">Better than Spotify.</h3>
+            <p class="text-md text-darkgrey-1 download-paragraph">
+              White Gold began gaining popularity in the early 1900’s as an
+              alternative to platinum. Platinum was steadily becoming more
+              fashionable, but because of its rarity many could not afford
+              it
+              Then, during World War II the government put a ban on the use
+              of
+              Platinum for any non-military functions and the demand for
+              White
+              Gold skyrocketed.
+            </p>
+          </div>
+          <img
+            class="download-image"
+            src="https://dl.dropboxusercontent.com/s/guldbe07r269hnr/iphones.png?dl=0"
           />
-          <!-- <button class="join-btn text-lg text-white">JOIN US</button> -->
-          <a href="javascript:void(0)" class="join-btn text-lg text-white"
-            >JOIN US</a
-          >
-        </form>
+        </div>
       </section>
-    </main>
 
-    <!-- Footer -->
-    <footer class="bg-black footer">
-      <a href="javascript:void(0)" alt="footer-logo">
-        <img
-          src="https://dl.dropboxusercontent.com/s/f1sysypa1ijj8og/logo-copy.png?dl=0"
-          class="footer-logo"
-        />
-      </a>
-      <ul class="footer-links">
-        <li class="footer-link">
-          <a href="javascript:void(0)" class="text-sm text-white font-w-600"
-            >How it works</a
-          >
-        </li>
-        <li class="footer-link">
-          <a href="javascript:void(0)" class="text-sm text-white font-w-600"
-            >Create an account</a
-          >
-        </li>
-        <li class="footer-link">
-          <a href="javascript:void(0)" class="text-sm text-white font-w-600"
-            >Support</a
-          >
-        </li>
-        <li class="footer-link">
-          <a href="javascript:void(0)" class="text-sm text-white font-w-600"
-            >FAQ</a
-          >
-        </li>
-        <li class="footer-link">
-          <a href="javascript:void(0)" class="text-sm text-white font-w-600"
-            >Twitter</a
-          >
-        </li>
-      </ul>
-      <p class="text-sm text-darkgrey-3 font-w-600 footer-copyright">
-        Copyright 2016 MeshApp. All Rights Reserved.
-      </p>
-    </footer>
+        <!-- Join us Now section -->
+        <section class="container join-section">
+          <h2 class="heading-1 text-darkgrey-1">Join us now</h2>
+          <p class="text-lg text-darkgrey-1 join-paragraph">
+            Join us along the way of becoming great! We will send you emails
+            containing information of how you can help us. We don’t spam.
+          </p>
+          <form class="join-form">
+            <input
+              type="email"
+              class="join-input"
+              placeholder="Your email address"
+            />
+            <!-- <button class="join-btn text-lg text-white">JOIN US</button> -->
+            <a href="javascript:void(0)" class="join-btn text-lg text-white"
+              >JOIN US</a
+            >
+          </form>
+        </section>
+      </main>
+  
+      <!-- Footer -->
+      <footer class="bg-black footer">
+        <a href="javascript:void(0)" alt="footer-logo">
+          <img
+            src="https://dl.dropboxusercontent.com/s/f1sysypa1ijj8og/logo-copy.png?dl=0"
+            class="footer-logo"
+          />
+        </a>
+        <ul class="footer-links">
+          <li class="footer-link">
+            <a href="javascript:void(0)" class="text-sm text-white font-w-600"
+              >How it works</a
+            >
+          </li>
+          <li class="footer-link">
+            <a href="javascript:void(0)" class="text-sm text-white font-w-600"
+              >Create an account</a
+            >
+          </li>
+          <li class="footer-link">
+            <a href="javascript:void(0)" class="text-sm text-white font-w-600"
+              >Support</a
+            >
+          </li>
+          <li class="footer-link">
+            <a href="javascript:void(0)" class="text-sm text-white font-w-600"
+              >FAQ</a
+            >
+          </li>
+          <li class="footer-link">
+            <a href="javascript:void(0)" class="text-sm text-white font-w-600"
+              >Twitter</a
+            >
+          </li>
+        </ul>
+        <p class="text-sm text-darkgrey-3 font-w-600 footer-copyright">
+          Copyright 2016 MeshApp. All Rights Reserved.
+        </p>
+      </footer>
 
     <script src="index.js"></script>
   </body>

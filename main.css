@@ -18,9 +18,14 @@ a {
 
 /* COMMON STYLING STARTS HERE */
 
-.container-lg {
-    padding-right: 100px;
-    padding-left: 100px;
+.container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    box-sizing: border-box;
+
 }
 
 /* fonts */
@@ -120,20 +125,32 @@ a {
 }
 
 /* COMMON STYLING ENDS HERE*/
-
 /* Navbar */
 header {
     position: absolute;
-    top: 60px;
-    width: 90%;
+    top: 0;
+    width: 100%;
+    height: 130px;
     margin: 0 auto;
-    padding:0 100px;
+    padding: 0 100px;
     box-sizing: border-box;
-  
+    overflow-y: hidden;
 }
-.navigation{
+
+.navigation {
+    position: absolute;
+    top: 60px;
+    left: 50%;
+    transform: translateX(-50%);
     display: flex;
     justify-content: space-between;
+}
+
+.responsive-nav-text {
+    font-family: var(--SourceSansPro);
+    font-size: 25px;
+    letter-spacing: 0.66px;
+    font-weight: normal;
 }
 
 .logo {
@@ -171,11 +188,18 @@ header {
 
 
 /* Banner */
+.banner-section {
+    background-image: linear-gradient(108deg, #fceb6f 17%, #fede60 77%);
+}
+
 .banner {
     display: flex;
     justify-content: space-between;
-    background-image: linear-gradient(108deg, #fceb6f 17%, #fede60 77%);
     padding-top: 200px;
+}
+
+.banner-text {
+    max-width: 550px;
 }
 
 .banner-heading {
@@ -184,7 +208,6 @@ header {
 
 .banner-paragraph {
     margin-top: 70px;
-    width: 500px;
 }
 
 .banner-buttons {
@@ -210,10 +233,10 @@ header {
     font-size: 30px;
 }
 
-.banner-image,.download-image {
-    object-fit: fill;
-    width:200px;
+.banner-image {
+    max-width: 550px;
 }
+
 
 /* how-it-works */
 .how-it-works {
@@ -223,6 +246,7 @@ header {
 .steps {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
     margin-top: 100px;
 }
 
@@ -240,6 +264,8 @@ header {
     margin-top: 40px;
 }
 
+
+
 /* Social buttons */
 .social-buttons {
     display: flex;
@@ -249,6 +275,8 @@ header {
     gap: 60px;
 }
 
+
+
 /* Download section */
 .download-section {
     margin-top: 60px;
@@ -257,7 +285,6 @@ header {
     justify-content: space-between;
     align-items: center;
     position: relative;
-    z-index: 1;
 }
 
 .yellow-box {
@@ -275,8 +302,15 @@ header {
 
 .download-paragraph {
     margin-top: 44px;
-    width: 560px;
+    max-width: 400px;
 }
+
+.download-image {
+    max-width: 500px;
+}
+
+
+
 
 /* Join us now section */
 .join-section {
@@ -289,7 +323,7 @@ header {
 
 .join-paragraph {
     margin-top: 48px;
-    width: 750px;
+    max-width: 750px;
 }
 
 .join-form {
@@ -299,7 +333,7 @@ header {
 }
 
 .join-input {
-    width: 404px;
+    max-width: 404px;
     height: 70px;
     padding: 0 40px 0 41px;
     box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.11);
@@ -350,57 +384,60 @@ header {
     margin-top: 35px;
 }
 
-@keyframes backgroundChanger {
-    0% {
-        background-color: white;
-    }
-
-    50% {
-        background-color: #333;
-        color: white;
-    }
-
-    100% {
-        background-color: transparent;
-    }
-}
 
 
+/* Media Queries */
+@media screen and (max-width: 768px) {
 
-
-
-/* MEDIA QUERIES*/
-
-/* MAX WIDTHS */
-@media screen and (max-width: 1000px) {
-
-    /* common styling media queries */
-    .text-lg {
-        font-size: 16px;
-    }
-
-
-    header {
-        padding: 0 100px;
-        top:40px
+    .responsive-nav-text {
+        font-size: 35px;
     }
 
     .navbar {
         gap: 20px;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
     }
 
-    .nav-item {
-        margin-top: 10px;
+
+    .responsive-nav-text {
+        font-size: 35px;
     }
 
-    .heading-2 {
-        font-size: 25px;
+    .btn-lg {
+        padding: 12px;
     }
 
-    /* banner */
+
+
+
+    .navigation {
+        flex-direction: column;
+        padding: 0 40px 0 20px;
+        box-sizing: border-box;
+    }
+
+    .dropdown-menu {
+        width: 100%;
+    }
+
+    .navbar {
+        display: none;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
     .banner {
+        flex-direction: column;
         justify-content: space-between;
-        padding-top: 200px;
+        align-items: center;
+        padding: 140px 20px 0;
     }
 
     .banner-heading {
@@ -412,10 +449,6 @@ header {
         width: 250px;
     }
 
-    .download-image {
-        margin-top: 80px;
-    }
-    
 
     .banner-buttons {
         margin-top: 40px;
@@ -429,8 +462,71 @@ header {
         font-size: 20px;
     }
 
+
+    .social-buttons {
+        gap: 30px;
+    }
+
+    .yellow-box {
+        display: none;
+    }
+
+
+    .download-section {
+        flex-direction: column;
+        justify-content: center;
+        gap: 30px;
+    }
+
+
+    .join-form {
+        flex-direction: column;
+    }
+
+    .join-btn {
+        align-self: center
+    }
+
+    .footer-links {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 30px;
+    }
+
+}
+
+@media screen and (max-width: 1000px) {
+    .container {
+        padding-left: 20px;
+        padding-right: 20px;
+        box-sizing: border-box;
+    }
+
+    .banner-image,
+    .download-image {
+        max-width: 330px;
+    }
+
+    .heading-2 {
+        font-size: 24px;
+    }
+
+    .text-lg {
+        font-size: 16px;
+    }
+
     .btn-lg {
-        padding: 12px;
+        padding: 10px 15px 15px;
+    }
+
+    .text-lg {
+        font-size: 16px;
+    }
+
+
+    .nav-item {
+        margin-top: 10px;
+        font-size: 25px;
     }
 
     .heading-1 {
@@ -453,262 +549,9 @@ header {
         font-size: 11px;
     }
 
-    /* How it works */
-    .steps {
-        flex-direction: column;
-        align-items: center;
-        margin-top: 50px;
+    .heading-2 {
+        font-size: 25px;
     }
 
-    .social-buttons {
-        flex-direction: row;
-    }
 
-    .btn-apple {
-        margin-bottom: 0;
-    }
-
-    /* Download section */
-    .download-section {
-        flex-direction: column;
-        justify-content: center;
-        padding: 0 30px;
-    }
-
-    .download-paragraph {
-        width: 100%;
-    }
-
-    .download-image {
-        margin-top: 30px;
-    }
-
-    .yellow-box {
-        display: none;
-    }
-
-    /* Join us sections */
-    .join-section {
-        margin: 58px 20px 0;
-    }
-
-    .join-paragraph {
-        width: 300px;
-    }
-
-    .join-form {
-        flex-direction: column;
-    }
-
-    .join-input {
-        width: 100%;
-        height: 40px;
-        align-self: center;
-        padding: 0 20px 0 21px;
-    }
-
-    .join-input::placeholder {
-        font-size: 14px;
-    }
-
-    .join-btn {
-        align-self: center;
-        height: 40px;
-        padding: 10px 20px 0 21px;
-    }
-
-    /* Footer */
-    .footer-links {
-        flex-direction: column;
-        align-items: center;
-        margin-top: 40px;
-    }
-
-}
-
-
-@media screen and (max-width: 670px) {
-    header{
-        justify-content: space-between;
-        padding: 15px;
-        top: 0px;
-        width: 100%;
-    }
-    .banner{
-        padding-top:120px;
-    }
-    .navigation {
-        flex-direction: column;
-        align-items: center;
-        justify-content:flex-start;
-        padding:0 40px;
-    }
-
-    .navbar {
-        display: none;
-        flex-direction: column;
-        justify-content:flex-start;
-        align-items: center;
-        margin-top: 30px;
-    }
-
-    .dropdown-menu {
-        width: 100%;
-    }
-
-    .hamburger {
-        display: block;
-    }
-
-    .container-lg {
-        padding-right: 50px;
-        padding-left: 50px;
-    }
-
-}
-
-@media screen and (max-width: 800px) {
-    .banner{
-        flex-wrap: wrap;
-    }
-}
-
-
-/* MIN WIDHS */
-
-
-@media screen and (min-width: 300px) {
-    .banner-image,.download-image{
-        width: 250px;
-    }
-}
-
-@media screen and (min-width: 670px) {
-
-    
-    .banner-image,.download-image{
-        width: 250px;
-    }
-    .download-image {
-        margin-top: 100px;
-    }
-    
-
-    .fa-apple,
-    .fa-google-play {
-        margin-right: 7px;
-        font-size: 20px;
-    }
-
-    .btn-lg {
-        padding: 10px 20px 12px 20px;
-    }
-
-    /* How it works */
-    .steps {
-        flex-direction: row;
-    }
-
-    /* Download section */
-    .download-section {
-        flex-direction: row;
-    }
-
-    /* Join us section */
-    .join-form {
-        flex-direction: row;
-    }
-
-    .join-paragraph {
-        width: 400px;
-    }
-
-    .join-input {
-        width: 304px;
-        height: 50px;
-        padding: 0 25px 0 31px;
-    }
-
-    .join-btn {
-        padding: 10px 25px 0 31px;
-        background-image: linear-gradient(103deg, #fceb6f 15%, #fede60 78%);
-    }
-
-    /* Footer */
-    .footer-links {
-        flex-direction: row;
-    }
-}
-
-@media screen and (min-width: 801px) {
-
-    /* header media queries */
-    .text-lg {
-        font-size: 18px;
-    }
-
-    .banner-image,.download-image {
-        width:300px;
-    }
-
-    /* Banner */
-    .banner-image,
-    .download-image {
-        margin-top: 0;
-        margin-left: 50px;
-    }
-    .download-image {
-        margin-left:0
-    }
-
-    
-    /* Download section */
-    .download-section {
-        flex-direction: row;
-    }
-    .yellow-box{
-        left: 13%;
-    }
-}
-
-
-
-
-
-
-@media screen and (min-width: 1100px) {
-    .banner-image,.download-image{
-        width:500px;
-    }
-}
-
-@media screen and (min-width: 1400px) {
-
-    .banner {
-        justify-content: center;
-    }
-    .navigation{
-        justify-content: space-around;
-    }
-
-  
-
-    .steps {
-        justify-content: center;
-        gap: 150px;
-    }
-
-    .download-section {
-        justify-content: center;
-    }
-    .yellow-box{
-        left: 30%;
-    }
-}
-
-@media screen and (min-width: 1700px) {
-   
-    .yellow-box{
-        left: 35%;
-    }
 }

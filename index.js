@@ -1,6 +1,7 @@
 const header = document.getElementById("header");
 const navigation = document.getElementById("navbar");
 const elements = document.getElementsByClassName('nav-link');
+const bodyElement = document.getElementById('body');
 
 const handleMouseIn = value => {
     for (let i = 0; i < elements.length; i++) {
@@ -17,29 +18,41 @@ const handleMouseOut = () => {
 const dropdownNavigation = () => {
     if (navigation.style.display === "none") {
         navigation.style.display = "flex";
-        navigation.style.height = "100vh";
+        header.style.height = "102vh";
         header.style.backgroundColor = "white";
+        bodyElement.style.height = "100%";
+        bodyElement.style.overflowY = "hidden";
     }
     else {
         navigation.style.display = "none";
+        header.style.height = "130px";
         header.style.backgroundColor = "transparent";
+        bodyElement.style.overflowY = "auto";
     }
 }
 
 
 function changingMediaQuery() {
-    if (window.innerWidth >= 670) {
+    if (window.innerWidth >= 768) {
         navigation.style.display = "flex";
-        header.style.padding = "0 100px";
-        header.style.top = "60px";
+        header.style.backgroundColor = "transparent";
     }
+
     else {
-        navigation.style.display = "none"
-        header.style.padding = "0";
-        header.style.top = "0";
-        header.style.padding = "15px";
-        header.style.width = "100%";
+        navigation.style.display = "none";
     }
 }
 
 window.addEventListener('resize', changingMediaQuery);
+
+// window.onscroll = function () {
+//     "use strict";
+//     if (document.body.scrollTop >= 100 || document.documentElement.scrollTop >= 100) {
+//        header.style.height = "130px"
+//        header.style.backgroundImage = "linear-gradient(0deg,white,white)";
+//     }
+//     else {
+//        header.style.height = "130px"
+//        header.style.backgroundImage = "transparent";
+//     }
+// };
