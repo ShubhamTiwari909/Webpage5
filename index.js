@@ -32,7 +32,7 @@ const dropdownNavigation = () => {
     }
     else {
         navigation.style.display = "none";
-        header.style.height = "130px";
+        header.style.height = "100px";
         header.style.backgroundColor = "transparent";
         bodyElement.style.overflowY = "auto";
         scrolledNavigation();
@@ -60,7 +60,7 @@ window.addEventListener('resize', changingMediaQuery);
 let scrolledNavigation = () => {
     "use strict";
     if (document.body.scrollTop >= 100 || document.documentElement.scrollTop >= 100) {
-        header.style.height = "130px"
+        header.style.height = "100px"
         header.style.backgroundColor = "black";
         hamburger[0].style.color="white";
         for (let i = 0; i < elements.length; i++) {
@@ -68,7 +68,7 @@ let scrolledNavigation = () => {
         }
     }
     else {
-        header.style.height = "130px"
+        header.style.height = "100px"
         header.style.backgroundColor = "transparent";
         hamburger[0].style.color="black";
         for (let i = 0; i < elements.length; i++) {
