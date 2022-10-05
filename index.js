@@ -15,6 +15,7 @@ const handleMouseOut = () => {
     for (let i = 0; i < elements.length; i++) {
         elements[i].style.color = "#333";
     }
+    scrolledNavigation();
 }
 
 const dropdownNavigation = () => {
@@ -51,6 +52,7 @@ function changingMediaQuery() {
     else {
         navigation.style.display = "none";
     }
+    scrolledNavigation();
 }
 
 window.addEventListener('resize', changingMediaQuery);

@@ -236,6 +236,7 @@ header {
 
 .banner-image {
     max-width: 550px;
+    aspect-ratio: 3/2;
 }
 
 
@@ -506,6 +507,10 @@ header {
     .banner-image,
     .download-image {
         max-width: 330px;
+    }
+
+    .banner-image {
+        aspect-ratio: 1/1;
     }
 
     .heading-2 {
