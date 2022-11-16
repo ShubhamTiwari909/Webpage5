@@ -4,17 +4,16 @@ const elements = document.getElementsByClassName('nav-link');
 const hamburger = document.getElementsByClassName("hamburger");
 const bodyElement = document.getElementById('body');
 
-console.log(hamburger)
 const handleMouseIn = value => {
-    for (let i = 0; i < elements.length; i++) {
-        i === value ? elements[i].style.color = "#333" : elements[i].style.color = "darkgrey";
-    }
+    Array.from(elements).forEach((elements,i) => {
+        i === value ? elements.style.color = "#333" : elements.style.color = "darkgrey";
+    });
 };
 
 const handleMouseOut = () => {
-    for (let i = 0; i < elements.length; i++) {
-        elements[i].style.color = "#333";
-    }
+    Array.from(elements).forEach((elements) => {
+       elements.style.color = "#333"
+    });
     scrolledNavigation();
 }
 
@@ -25,9 +24,9 @@ const dropdownNavigation = () => {
         header.style.backgroundColor = "white";
         bodyElement.style.height = "100%";
         bodyElement.style.overflowY = "hidden";
-        for (let i = 0; i < elements.length; i++) {
-            elements[i].style.color = "#333";
-        }
+        Array.from(elements).forEach((elements) => {
+            elements.style.color = "#333"
+         });
         hamburger[0].style.color="black";
     }
     else {
@@ -63,17 +62,17 @@ let scrolledNavigation = () => {
         header.style.height = "100px"
         header.style.backgroundColor = "black";
         hamburger[0].style.color="white";
-        for (let i = 0; i < elements.length; i++) {
-            elements[i].style.color = "white";
-        }
+        Array.from(elements).forEach((elements) => {
+            elements.style.color = "white"
+         });
     }
     else {
         header.style.height = "100px"
         header.style.backgroundColor = "transparent";
         hamburger[0].style.color="black";
-        for (let i = 0; i < elements.length; i++) {
-            elements[i].style.color = "#333";
-        }
+        Array.from(elements).forEach((elements) => {
+            elements.style.color = "#333"
+         });
     }
 };
 
