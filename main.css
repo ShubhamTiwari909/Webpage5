@@ -223,11 +223,13 @@ header {
 .btn-apple {
     border-radius: 100px;
     animation: backgroundChanger 2s 2s linear 1 forwards;
+    background-color: #0b032c;
 }
 
 .btn-googleplay {
     border-radius: 12px;
     animation: backgroundChanger 2s 2s linear 1 forwards;
+    background-color: #0b032c;
 }
 
 .fa-apple,
