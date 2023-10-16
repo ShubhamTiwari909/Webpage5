@@ -229,6 +229,7 @@ header {
     border-radius: 100px;
     border: 1px solid #ffffff;
     animation: backgroundChanger 2s 2s linear 1 forwards;
+    background-color: #0b032c;
     color: #ffffff;
 }
 
@@ -236,6 +237,7 @@ header {
     border-radius: 12px;
     border: 1px solid #ffffff;
     animation: backgroundChanger 2s 2s linear 1 forwards;
+    background-color: #0b032c;
     color: #ffffff;
 }
 
